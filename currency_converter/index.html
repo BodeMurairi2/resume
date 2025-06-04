@@ -15,27 +15,53 @@
     <main class="convert-class">
         <div>
             <h2> Convert to any currencies </h2>
-            <form action="/" method="post">
-                <p> Convert from: </p>
-                <input type="text">
-                <p> Convert to: </p>
-                <input type="text">
-                <p> Enter amount: </p>
-                <input type="number"><br><br>
+            <form id="currency-form">
+                <div class="convert-from">
+                    <p> Convert from: </p>
+                    <select id="fromCurrency" name="fromCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY"> JPY </option>
+                        <option value="GBP"> GBP</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="RWF"> RWF </option>
+                        <option value="NRA">NRA </option>
+                        <option value="SHL"> SHL </option>
+                    </select>
+                </div>
+                <div class="convert-to">
+                    <p> Convert to: </p>
+                    <select id="toCurrency" name="fromCurrency">
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="JPY"> JPY </option>
+                        <option value="GBP"> GBP</option>
+                        <option value="RUB"> RUB</option>
+                        <option value="RWF"> RWF </option>
+                        <option value="NRA">NRA </option>
+                        <option value="SHL"> SHL </option>
+                    </select>
+                </div>
+                <div class="amount-convert">
+                    <p> Enter amount: </p>
+                    <input type="number" id="amount" name="amount" step="0.01" placeholder="ex: 100"><br><br>
+                </div>
                 <div class="button-class">
-                    <button> Available currencies</button>
-                    <button> Convert </button>
+                    <button type="button" onclick="available_currencies()"> Available currencies </button>
+                    <button type="button" onclick="converter()"> Convert </button>
                 </div>
             </form>
+            <div class="result">
+                <p>Result:</p>
+                <input type="text" id="result" readonly>
+            </div>
         </div>
     </main>
     <footer>
         <div class="footer-section">
-            <h2>Demo Conversation App </h2>
-            <p> Exchange rate fetched from Open API </p>
-            <p> App built by Bode Murairi </p>
-            <a href="https://github.com/BodeMurairi"> Visit my page </a>
+            <h2>Demo Conversion App</h2>
+            <p>Exchange rates updated in real-time using the latest data.</p>
         </div>
-    </footer>    
+    </footer>
 </body>
 </html>
