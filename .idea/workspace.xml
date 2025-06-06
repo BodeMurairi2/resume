@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="906530b8-c4bf-4402-8f09-84e3eef385a2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/currency_converter/movie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency_converter/converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/currency_converter/converter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency_converter/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/currency_converter/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,6 +34,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.movie.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -58,7 +65,11 @@
       <updated>1748969479671</updated>
       <workItem from="1748969480928" duration="131000" />
       <workItem from="1749033236538" duration="45000" />
-      <workItem from="1749065288895" duration="7889000" />
+      <workItem from="1749065288895" duration="8116000" />
+      <workItem from="1749107229620" duration="1978000" />
+      <workItem from="1749116326102" duration="25000" />
+      <workItem from="1749120418813" duration="248000" />
+      <workItem from="1749121792528" duration="5278000" />
     </task>
     <servers />
   </component>
