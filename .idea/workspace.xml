@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="906530b8-c4bf-4402-8f09-84e3eef385a2" name="Changes" comment="" />
+    <list default="true" id="906530b8-c4bf-4402-8f09-84e3eef385a2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mars_voyageProject/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/mars_voyageProject/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mars_voyageProject/try.js" beforeDir="false" afterPath="$PROJECT_DIR$/mars_voyageProject/try.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/naza/try.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio_website/style/style.css" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +37,9 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.main.js.executor&quot;: &quot;Run&quot;,
     &quot;Node.js.movie.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.try.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -46,6 +54,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bodem\Documents\programming\web-development\mars_voyageProject" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -68,6 +81,12 @@
       <workItem from="1749120418813" duration="248000" />
       <workItem from="1749121792528" duration="5278000" />
       <workItem from="1749187260959" duration="625000" />
+      <workItem from="1749676496767" duration="2062000" />
+      <workItem from="1749711862316" duration="5263000" />
+      <workItem from="1749717267800" duration="3160000" />
+      <workItem from="1749726031295" duration="5686000" />
+      <workItem from="1749754853242" duration="150000" />
+      <workItem from="1749788305642" duration="4000" />
     </task>
     <servers />
   </component>
