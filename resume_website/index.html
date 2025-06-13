@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,18 +22,257 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#skills">Skills</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="dark-mode-toggle">
-                    <button id="darkModeToggle">Toggle Dark Mode</button>
-                    <button id="downloadResumeButton">Download Resume</button>
+                    <button id="downloadResumeButton"> Download Resume </button>
+                    <button id="darkModeToggle"> Light/Dark Mode</button>
                 </div>
             </nav>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
-    
+    <main>
+        <br>
+        <section id="about">
+            <div class="image-container">
+                <img src="images/bode_prof.jpg" alt="Profile Picture" width="200" height="260">
+            </div>
+            <div class="about-content">
+                <h1> BODE MURAI MURAIRI </h1></p>
+                <p> I am a software engineering student with a passion for developing innovative solutions </p>
+                <p> Python developper with a deep passion for Machine learning and Artificial Intelligence</p>
+                <p> Empowering Africa’s Youth Through Tech, Education, and Entrepreneurship</p>
+            </div>
+        </section>
+        <hr>
+        <section id="education">
+            <h2> Education </h2>
+            <div class="container">
+                <div class="education-item">
+                    <h3> African Leadership University, Rwanda</h3>
+                    <p>  Bachelor of Honor in Software Engineering  </p>
+                    <p> Expected Graduation: 2027 </p>
+                </div>
+                <div class="education-item">
+                    <h3> African Leadership Academy, South Africa </h3>
+                    <p> High School Diploma and Cambridge As & A Levels diploma  </p>
+                    <p> Mathematics, Chemistry, French</p>
+                    <p> Graduated: 2021 </p>
+                </div>
+                <div class="education-item">
+                    <h3> College Notre Dame D'Afrique, DRC </h3>
+                    <p>  National Diploma in BioChemistry </p>
+                    <p> Graduated: 2019 </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="experience">
+            <h2> Experience </h2>
+            <div class="container">
+                <div class="flex-horizontal">
+                    <div class="experience-item">
+                        <h3> Researcher and Software Developper </h3>
+                        <p> Alfor Arts Challenge, Remote </p>
+                        <p> May 2025 - June 2025 </p>
+                        <p> - Developed a Web application for Intellectual Property management </p>
+                        <p> - Integrated Chatbot for learning IP</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3> Admission Intern </h3>
+                        <p> African Leadership Academy, Remote </p>
+                        <p> November 2023 - December 2024 </p>
+                        <p> - Found and Assisted 50 students to apply to African Leadership Academy and Rise Scholarship</p>
+                        <p> - Scheduled, led, and provided detailled reviews of finalist candidates for admission </p>
+                    </div>
+                    <div class="experience-item">
+                        <h3> On the group Entrepreneurial leadership program manager </h3>
+                        <p> Al for Education and Complexe Scholaire Manasseh, Kinshasa-Remote </p>
+                        <p> February 2022 - August 2022 </p>
+                        <p> - Designed and Implemented the Entrepreneurial curriculum for primary school students</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3> Chief of Finance and Logistic </h3>
+                        <p> Sauti Afrika-Startup, ALA-South Africa </p>
+                        <p> March 2020 - May 2021 </p>
+                        <p> - Managed the financial planning and budgeting processes for the startup </p>
+                        <p> - Oversaw all financial operations and ensured compliance with regulations </p>
+                        <p> - Developed strategies to reimburse previous loans and generate profits in a year (900Rands loans and 210 Rands profit) </p>
+                        <p> - Managed all the startup logistics </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="Projects">
+            <h2> Projects </h2>
+            <div class="container">
+                <div class="project-item">
+                    <h3> Medpulse, Group Leader </h3>
+                    <p> March - April 2025 </p>
+                    <p> - Oversee project timeline and deliverables  </p>
+                    <p> - Medical Files Database management system: CommandLine Appliction developed in Python </p>
+                    <p> - Implemented medical reports sharing through emails as PDF </p>
+                </div>
+                <div class="project-item">
+                    <h3> AquaServe </h3>
+                    <p> October 2024 - November 2024 </p>
+                    <p> Water treatment Plan for Ngoma District in Rwanda </p>
+                </div>
+                <div class="project-item">
+                    <h3> Enlightenment-lab </h3>
+                    <p> March 2021 - July 2021 </p>
+                    <p> - Wrote an Online Library for High chool Students </p>
+                    <p> - Features: Book search and recommandations, collaboration and daily quizzes features, generated videos</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="otherProjects">
+            <h2> Other Projects </h2>
+            <div class="container">
+                <div class="project-item">
+                    <h3> PDF books to Audio </h3>
+                    <p> March 2025 </p>
+                    <p> - PDF to Audio converter using Python running on CLI </p>
+                    <p> - Features: Text to Speech, Audio file generation, Audio file sharing </p>
+                    <p> - Tools: Langchain, gTTS and SMTP Library </p>
+                </div>
+                <div class="project-item">
+                    <h3> Book Recommendation CLI application </h3>
+                    <p>  March 2025 </p>
+                    <p> - Book recommandation using Webscraping: Selenium Web driver </p>
+                </div>
+                <div class="project-item">
+                    <h3> Colors generator Web page </h3>
+                    <p> April 2025 </p>
+                    <p> - Developed a web page for extracting colors from an image uploaded </p>
+                    <p> - Modules: Html, Css, Flask, Numpy, Webcolors, Scikit-learn, Pillow </p>
+                </div>
+                <div class="project-item">
+                    <h3> SpaceRace </h3>
+                    <p> April-May 2025 </p>
+                    <p> - Analyze the Space Missions Data </p>
+                    <p> - Modules: Pandas, NumPy, Matplotlib, Plotly, Seaborn </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="skills">
+            <h2> Skills </h2>
+            <div class="container">
+                <div class="skills-item">
+                    <h3> Programming Languages </h3>
+                    <p> Python, JavaScript, HTML, CSS</p>
+                </div>
+                <div class="skills-item">
+                    <h3> Automation, Data Science, Web scraping </h3>
+                    <p> Pandas, Numpy, Matplotlib, Plotly, Scikit-learn, Langchain</p>
+                </div>
+                <div class="skills-item">
+                    <h3> Tools and Technologies </h3>
+                    <p> Version Control: git, github, Flask, FastAPI </p>
+                </div>
+                <div class="skills-item">
+                    <h3> Soft Skills </h3>
+                    <p> Leadership, Teamwork, Communication, Problem-solving, Strategic Planning </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="achievements">
+            <h2> Achievements </h2>
+            <div class="container">
+                <div class="achievement-item">
+                    <h3> African Leadership University </h3>
+                    <p> - Awarded the ALU Scholarship for the Class of 2027 </p>
+                    <p> - Selected as a finalist for the ALU Class of 2027 </p>
+                </div>
+                <div class="achievement-item">
+                    <h3> Palentir Future Global Scholarship </h3>
+                    <p> - Awarded the Palentir Future Global Scholarship for the Class of 2023 </p>
+                </div>
+                <div class="achievement-item">
+                    <h3> Yale Young Global Scholars- Connect, Remote </h3>
+                    <p> - Awarded the Yale Young Global Scholars- Connect, Remote for the Class of 2020 </p>
+                    <p> - Solving Globale Challenges </p>
+                </div>
+                <div class="achievement-item">
+                    <h3> African Leadership Academy </h3>
+                    <p> - Selected as a finalist for the African Leadership Academy Class of 2019 </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="certificates">
+            <h2> Certificates </h2>
+            <div class="container">
+                <div class="certificate-item">
+                    <h3> 100 Days of Code Python Bootcamp </h3>
+                    <p> - Completed the 100 Days of Code Python BootCamp on Udemy </p>
+                    <p> - Gained proficiency in Python programming through hands-on projects and exercises </p>
+                    <p> - Link: <a href="https://www.udemy.com/certificate/UC-0056c18e-bfae-4332-abee-83fb9b2f3c41/" target="_blank">Click Me!</a></p>
+                </div>
+                <div class="certificate-item">
+                    <h3> Python for Data Science and AI </h3>
+                    <p> - Earned the Data Science Professional Certificate from IBM </p>
+                    <p> - Gained skills in data analysis, and AI </p>
+                    <p> - Link: <a href="https://www.credly.com/badges/7fabb7f4-4e17-44c8-872c-39b89e30912b/linked_in_profile" target="_blank"> Click Me! </a></p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2> Contact </h2>
+            <div class="container">
+                <p> For inquiries, collaborations, or opportunities, feel free to complete this form </p>
+                <form id="contactForm">
+                    <div id="nameField">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required> <br><br>
+                    </div>
+                    <div id="emailField">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required> <br><br>
+                    </div>
+                    <div id="phoneField">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required> <br><br>
+                    </div>
+                    <div id="subjectField">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required> <br><br>
+                    </div>
+                    <div id="messageField">
+                        <label for="message">Message:</label>
+                        <p>Please enter your message below:</p>
+                        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    </div>
+                    <div id="submitField">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <div class="container-header">
+            <h2> Bode Murai Murairi's Resume </h2>
+            <p> Software Engineering Student | Python Developer | AI Enthusiast </p>
+        </div>
+        <div class="container-footer">
+            <p> © 2025 Bode Murai Murairi. All rights reserved. </p>
+            <p> Contact: <a href="mailto:bodemurairi2@gmail.com" target="_blank">Gmail</a></p>
+            <p> Connect with me on <a href="https://www.linkedin.com/in/bode-murairi-2490501aa/" target="_blank">LinkedIn</a> </p>
+            <p> Follow me on <a href="https://x.com/Bode_murairi" target="_blank">X</a> </p>
+            <p> View my projects on <a href="https://github.com/BodeMurairi" target="_blank">GitHub</a> </p>
+            <div id="buttons-id">
+                <button id="downloadResumeButton" onclick="window.location.href='Bode_Murai_Murairi_Resume.pdf'">Download Resume</button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
