@@ -12,6 +12,5 @@ function downloadResume() {
 function toggleTheme() {
     var darkMode = document.body;
     darkMode.classList.toggle('dark-mode');
+    document.getElementById('dark-mode').textContent = 'Light Mode';    
 }
-
-
