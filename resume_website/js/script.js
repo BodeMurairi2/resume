@@ -10,7 +10,15 @@ function downloadResume() {
 
 // Function to toggle light and dark mode
 function toggleTheme() {
-    var darkMode = document.body;
-    darkMode.classList.toggle('dark-mode');
-    document.getElementById('dark-mode').textContent = 'Light Mode';    
+    var body = document.body;
+    var button = document.getElementById('dark-mode');
+
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+        button.textContent = 'Light Mode';
+    } else {
+        button.textContent = 'Dark Mode';
+    }
 }
+
