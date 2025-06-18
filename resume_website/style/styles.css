@@ -2,27 +2,23 @@
 
 /* html and body styles */
 html, body {
-    background-color: white;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: #ffffff;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 /* header section */
 
 header .navigation-bar {
-    width: 100%;
+    max-width: max(font-optical-sizing, auto);
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:1rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .navigation-bar .logo {
@@ -32,34 +28,17 @@ header .navigation-bar {
 
 .nav-links {
     display: flex;
-    gap: 1rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #3182CE;
-  font-weight: 500;
-}
-
-.Themetoggle {
-    cursor: pointer;
-    border: 1px transparent;
-    font-size: 1rem;
-    padding: 1rem 1rem;
-}
-
-.Themetoggle:hover {
-    border-radius: 5px;
+    gap: 1.5rem;
 }
 
 /* about section */
 #about {
     display: flex;
+    background: #001d21;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 2rem 0;
-    margin-top: 1rem;
+    padding: 1.5rem 2%;
 }
 
 #about img {
@@ -68,27 +47,130 @@ header .navigation-bar {
     border-radius: 10px;
     margin-right: 4%;
 }
+
 #about .about-content {
-    max-width: 1000px;
+    max-width: auto;
     text-align: center;
 }
 
-p {
-    font-size: 1rem;
-    color: #1A202C;
-    line-height: 1.5;
-}
-
-/* education section */
-h2 {
-    text-align: center;
-    font-size: 2rem;
+#about h1 {
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    margin-top: 5rem;
+    color: white;
 }
+
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    padding: 2rem;
+}
+
+
+@keyframes alternate {
+     0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+/*education section */
+#education {
+    background-color: #007df0;
+}
+.graduation-year {
+    font-style: italic;
+    align-items: center;
+    animation: alternate;
+    animation-duration: infinite;
+
+}
+
+#Projects {
+    background: #007df0;
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    color: blue;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#download {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#dark-mode {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#submit-button {
+  border: none;
+  background-color: blue;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 500;
+}
+/* light and dark mode styles */
+.dark-mode {
+    background-color: #001d21;
+    color: #ffffff;
+}
+
+.dark-mode a {
+    color: #90caf9;
+}
+
+.dark-mode button {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode p {
+    color: blue
 }
