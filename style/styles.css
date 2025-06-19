@@ -71,7 +71,7 @@ header .navigation-bar {
     color: rgb(78, 34, 90);
 }
 
-/* Generic Containers */
+/* Containers */
 .container {
     display: flex;
     flex-wrap: wrap;

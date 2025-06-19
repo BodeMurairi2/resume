@@ -38,8 +38,7 @@
     background-color: #272533;
 }
 
-
-.dark-mode h1,
+.dark-mode #about h1,
 .dark-mode h2{
     color: blue;
 }
