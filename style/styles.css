@@ -1,24 +1,32 @@
-/* Css stylesheet for the web application */
-
-/* html and body styles */
+/* Base Styles */
 html, body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    background-color:rgb(43, 15, 51);
+}
 
-/* header section */
+header a {
+    color: skyblue;
+}
 
+/* Header */
 header .navigation-bar {
-    max-width: max(font-optical-sizing, auto);
+    max-width: 1200px;
+    margin: auto;
     height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
 }
 
 .navigation-bar .logo {
@@ -29,67 +37,65 @@ header .navigation-bar {
 .nav-links {
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
-/* about section */
+
+/* About Section */
 #about {
     display: flex;
+    flex-wrap: wrap;
     background: white;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    padding: 1.5rem 2%;
+    padding: 2rem;
+    text-align: center;
 }
 
 #about img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: auto;
     border-radius: 10px;
-    margin-right: 4%;
+    margin-bottom: 1rem;
 }
 
 #about .about-content {
-    max-width: auto;
-    text-align: center;
+    max-width: 600px;
+    padding: 1rem;
 }
 
 #about h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: blue;
+    color: rgb(78, 34, 90);
 }
 
+/* Generic Containers */
 .container {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    flex-wrap: nowrap;
     padding: 2rem;
 }
 
+/* Education Section */
+#education,
+#Projects,
+#skills,
+#certificates,
+footer {
+    background-color: rgb(122, 73, 135);
+    padding: 2rem;
+}
 
-@keyframes alternate {
-     0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
-}
-/*education section */
-#education {
-    background-color: lightblue;
-}
 .graduation-year {
     font-style: italic;
-    align-items: center;
-    animation: alternate;
-    animation-duration: infinite;
-
+    animation: alternate 4s infinite;
+    text-align: center;
 }
 
-#Projects {
-    background: lightblue;
-}
-
+/* Projects and Skills Section */
 p {
     font-size: 1rem;
     color: black;
@@ -97,65 +103,105 @@ p {
     word-break: break-word;
 }
 
-
+/* Headings */
 h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
     padding-top: 2rem;
-    color: blue;
+    color: rgb(43, 15, 51);
 }
 
+/* Footer */
 .container-footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 }
 
-#download {
-  border: none;
-  background-color: blue;
-  color: white;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
+/* Buttons */
+#download,
 #submit-button {
-  border: none;
-  background-color: blue;
-  color: white;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    border: none;
+    background-color: rgb(43, 15, 51);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+/* Links */
 a {
-  text-decoration: none;
-  color: blue;
-  font-weight: 500;
+    text-decoration: none;
+    color: rgb(43, 15, 51);
+    font-weight: 500;
 }
 
-#skills {
-    background-color: lightblue;
+/* Animation */
+@keyframes alternate {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
 }
 
-#certificates {
-    background-color: lightblue;
-}
-
-footer {
-    background-color: lightblue;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navigation-bar {
+        flex-direction: column;
+        text-align: center;
     }
 
-footer {
-    background-color: lightblue;
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin-right: 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header .navigation-bar {
+        padding: 1rem;
+    }
+
+    #download,
+    #submit-button {
+        width: 100%;
+    }
+
+    #about h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
 }
