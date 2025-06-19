@@ -1,7 +1,6 @@
-/* Dark Mode Toggle Button */
 #dark-mode {
   border: 1px solid #ccc;
-  background-color: white;
+  background-color: black;
   color: black;
   padding: 10px 10px;
   text-align: center;
@@ -52,7 +51,7 @@
 }
 
 /* Text Colors */
-.dark-mode #about h1{
+.dark-mode h1{
     color:blue;
 }
 
