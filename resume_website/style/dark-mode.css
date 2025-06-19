@@ -29,10 +29,14 @@
 }
 
 .dark-mode h1,
-.dark-mode h2,
+.dark-mode h2{
+    color: blue;
+}
+
 .dark-mode h3 {
     color: #F5F5F5;
 }
+
 
 .dark-mode p {
     color: #CCCCCC;
