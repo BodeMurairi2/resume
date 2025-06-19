@@ -22,3 +22,22 @@ function toggleTheme() {
     }
 }
 
+
+// Create scroll to top button dynamically
+const scrollBtn = document.createElement('button');
+scrollBtn.innerText = '⬆';
+scrollBtn.id = 'scrollTopBtn';
+document.body.appendChild(scrollBtn);
+
+// Show/hide button on scroll
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+// Scroll to top when clicked
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
