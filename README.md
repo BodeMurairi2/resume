@@ -12,7 +12,7 @@ This is a personal resume website built using **HTML**, **CSS**, and **JavaScrip
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/BodeMurairi2/resume.git
     ```
 2. Open `index.html` in your browser.
 
