@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/send_email.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -194,30 +195,30 @@
             <h2> Contact Me! </h2>
             <div class="container">
                 <div class="form-contact">
-                    <form id="contactForm">
+                    <form id="contactForm" onsubmit="return sendEmail(this);">
                         <div id="nameField">
                             <label for="name">FullName:</label>
-                            <input type="text" id="name" name="name" required> <br><br>
+                            <input type="text" id="name" name="name" required /> <br /><br />
                         </div>
                         <div id="emailField">
                             <label for="email">Email Address:</label>
-                            <input type="email" id="email" name="email" required> <br><br>
+                            <input type="email" id="email" name="email" required /> <br /><br />
                         </div>
                         <div id="phoneField">
                             <label for="phone">Phone Number:</label>
-                            <input type="tel" id="phone" name="phone" required> <br><br>
+                            <input type="tel" id="phone" name="phone" required /> <br /><br />
                         </div>
                         <div id="subjectField">
                             <label for="subject">Email Subject:</label>
-                            <input type="text" id="subject" name="subject" required> <br><br>
+                            <input type="text" id="subject" name="subject" required /> <br /><br />
                         </div>
                         <div id="messageField">
                             <label for="message">Message:</label>
                             <p>Please enter your message below:</p>
-                            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                            <textarea id="message" name="message" rows="4" required></textarea><br /><br />
                         </div>
                         <div id="submitField">
-                            <button type="submit" id="submit-button" onclick="sendEmail()">Send Message</button>
+                            <button type="submit" id="submit-button" >Send Message</button>
                         </div>
                 </form>
                 </div>
